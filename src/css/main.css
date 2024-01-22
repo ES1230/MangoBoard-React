@@ -1,0 +1,263 @@
+/* 최상단- 누구나 디자이너가 된다 */
+#kv{
+    display: flex;
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    background: #fede29;
+    justify-content: space-evenly;
+   
+}
+#kv .text{
+    margin-top: 100px;
+    margin-left: 20px;
+    min-width: 550px;
+    text-align: left;
+    /* overflow: hidden; */
+}
+.main #kv .text span {
+    display: block;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -0.025em;
+    color: #000;
+}
+.main .kv .text strong {
+    display: block;
+    margin-top: 21px;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 105px;
+    letter-spacing: -0.025em;
+    color: #000;
+}
+.main .kv .text a {
+    display: inline-block;
+    margin-top: 34px;
+    width: 240px;
+    border-radius: 40px;
+    background: #222;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: -0.025em;
+    color: #fff;
+    text-align: center;
+}
+
+/* 이미지 */
+.characterImg{
+    width: 692px;
+    height: 527px;
+    /* display: block; */
+    /* position: absolute; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/* 말풍선 캐릭터 */
+#kv #mesCha {
+    width: 206px;
+    left: 298px;
+    top: -56px;
+    animation: shake2 3.4s ease-in-out infinite; 
+}
+/* 로봇캐릭터 */
+#kv #robotCha{
+    width: 164px;
+    transform: rotate(18deg);
+    left: 138px;
+    top: 26px;
+    animation: shake2 3.2s ease-in-out infinite; 
+}
+/* 망고캐릭터 */
+#mangoCha {
+    margin-top: 45px;
+    height: 82%;
+    width: auto;
+    left: 283px;
+    top: 70px;
+    animation: shake 3.6s ease-in-out infinite; 
+}
+/* 엄지캐릭터 */
+#thumbCha{
+    width: 182px;
+    left: 557px;
+    top: 363px;
+    animation: shake 3s ease-in-out infinite; 
+}
+
+/* 캐릭터 위아래 이동 애니메이션 */
+@keyframes shake {
+    0%, 100% {
+        transform: translateY(0); /* 초기 위치 */
+    }
+    25%, 75% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px); 
+    }
+}
+@keyframes shake2 {
+    0%, 100% {
+        transform: translateY(0); /* 초기 위치 */
+    }
+    25%, 75% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+}
+
+
+/* 문구부분- 막막한 디자인 */
+#cont-template {
+    padding: 86px 0 85px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main .cont-tit {
+    font-size: 58px;
+    line-height: 78px;
+    letter-spacing: -0.025em;
+    color: #111;
+    text-align: center;
+}
+.main .desc{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.025em;
+    color: #222;
+    text-align: center;
+}
+
+/* 슬라이드 이미지 */
+#slide-img{
+    /* height: 200px; */
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* display: flex; */
+    /* background-image: url('https://www.mangoboard.net/images/img_main-character02.jpg'); */
+}
+#slide-img::before {
+    display: block;
+    padding-top: 56.25%; /* 이미지의 가로세로 비율에 따라 조절 (기본은 16:9) */
+}
+#slide-img h2{
+    z-index: 1;
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 80px;
+}
+#slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* 로그인 페이지 */
+.login{
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 150px;
+}
+.login h2{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #111;
+    text-align: center;
+    line-height: normal;
+}
+.login input{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.025em;
+    color: #000;
+    margin: 15px;
+}
+.login button{
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+    color: black;
+}
+
+/* 회원가입 페이지 */
+.signUp{
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 150px;
+    text-align: center;
+    align-items: center;
+}
+.signUp h2{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #111;
+    text-align: center;
+    line-height: normal;
+}
+.signup-text{
+    margin: 10px auto;
+}
+
+.signup-text p{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+}
+.signup-text p:nth-child(2){
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+.signUp Button{
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+    font-size : 18px;
+    background-color: white;
+    border: 2px solid #fbc300;
+    line-height: 56px;
+    color: #fbc300;
+    -webkit-transition : all .2s;
+}
+
+.signUp Button:hover{
+    background-color:  #fbc300;
+    color: black;
+}

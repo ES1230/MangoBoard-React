@@ -1,0 +1,116 @@
+/* ---------- GuideContentDetail ---------- */
+
+.guideContentDetail{
+    width: 60%;
+    margin: 15px auto;
+    min-width: 700px;
+    overflow: hidden;
+}
+
+/* 제목 */
+#detail-title{
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    color: #222222;
+}
+
+.detail-content-header{
+    margin-bottom: 10px;
+}
+
+/* 작성일, 작성자 */
+.detail-content-header span{
+    float: left;
+    margin-top: 70px;
+    margin: 15px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.detail-content-img{
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail-content-img img{
+    /* width: 1000px;
+    min-width: 500px;
+    max-width: 500px; */
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.detail-content-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+.detail-content-button button{
+    margin: 5px;
+    /* width: 70px;
+    height: 30px;
+    vertical-align: middle; */
+}
+
+.detail-content-text{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+
+/* ---------- GuideContentUpdate ---------- */
+#uTitle{
+    font-size: 20px;
+    font-weight: 800;
+}
+.guideContentUpdate {
+    width: 700px;
+    margin : auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 15px;
+    box-shadow:  0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.guideContentUpdate div{
+    box-sizing: border-box;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.guideContentUpdate span{
+    width: 100px;
+    margin-left: 0;
+    margin-right: 10px;
+    vertical-align: text-top;
+    align-items: center;
+}
+
+.guideContentUpdate input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 400px;
+}
+
+
+.update-content-text input{
+    height: 300px;
+}
+
+.update-content-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+.update-content-button button{
+    /* margin-top: 20px; */
+    margin: 30px;
+}
