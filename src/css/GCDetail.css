@@ -1,9 +1,9 @@
 /* ---------- GuideContentDetail ---------- */
 
 .guideContentDetail{
-    width: 60%;
+    width: 65%;
     margin: 15px auto;
-    min-width: 700px;
+    min-width: 750px;
     overflow: hidden;
 }
 
@@ -16,34 +16,30 @@
 }
 
 .detail-content-header{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* 작성일, 작성자 */
 .detail-content-header span{
     float: left;
-    margin-top: 70px;
-    margin: 15px;
+    margin-top: 80px;
+    margin: 18px;
     margin-left: 5px;
     font-size: 14px;
 }
 
 .detail-content-img{
-    margin-top: 30px;
+    margin-top: 50px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .detail-content-img img{
-    /* width: 1000px;
-    min-width: 500px;
-    max-width: 500px; */
-    width: 500px;
+    width: 550px;
     height: auto;
     object-fit: cover;
 }
-
 
 .detail-content-button{
     margin-top: 20px;
@@ -51,18 +47,19 @@
     justify-content: end;
 }
 .detail-content-button button{
-    margin: 5px;
-    /* width: 70px;
-    height: 30px;
-    vertical-align: middle; */
+    margin: 6px;
 }
 
 .detail-content-text{
-    margin-top: 20px;
-    font-size: 15px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 100px;
 }
 
+/* 목록으로 돌아가기 */
+.backList{
+    margin: 60px;
+}
 
 
 /* ---------- GuideContentUpdate ---------- */

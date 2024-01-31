@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './css/App.css';
 import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import GuideContentList from './pages/GuideContentList';
 import GuideContentDetail from './pages/GuideContentDetail';
 import GuideContentInsert from './pages/GuideContentInsert';
@@ -13,6 +13,7 @@ import MainPage from './pages/MainPage';
 import { userLogout } from './store';
 import PageNavigation from './components/PageNavigation';
 import Footer from './components/Footer';
+import './css/Login.css'
 
 export let Context = createContext(); //state저장소
 
@@ -20,24 +21,31 @@ export let Context = createContext(); //state저장소
 function App() {
 
   let user = useSelector( ({user}) => {return user});
-  let dispatch = useDispatch(); //store로 넘겨줄 때 이용
-
+  const dispatch = useDispatch(); //store로 넘겨줄 때 이용
 
   let [board, setBoard] = useState([]);  //초기데이터
   let allData = {board,setBoard} // 전달해줄 데이터
 
-
+  
   useEffect(function(){
 
     axios.get( "/data/data.json")
     .then(
       function(result){
         setBoard(result.data);
-  
       }
     ).catch((error)=> console.log(error.response))
 
   },[]);
+
+
+  // 로그아웃
+  const handleLogout = () =>{
+    const confirmLogout = window.confirm('로그아웃 하시겠습니까?');
+    if(confirmLogout){
+      dispatch(userLogout());
+    }
+  }
 
 
   return (
@@ -72,13 +80,13 @@ function App() {
               { !user ? (
                 <ul>
                   <Link to={'/login'}><li>로그인</li></Link>
-                  <Link to={'/singup'}><li>회원가입</li></Link>
+                  <Link to={'/singUp'}><li>회원가입</li></Link>
                   <li>저작권 규정</li>
                 </ul>
                 ):
                 <ul>
-                  <li><strong>{user.email}님</strong></li>
-                  <li onClick={ () => dispatch(userLogout())}> 로그아웃 </li>
+                  <li><strong>{user.email} 님 </strong></li>
+                  <li onClick={ () => handleLogout()}> 로그아웃 </li>
                   <li> 나의작업 </li>
                 </ul>
               }
@@ -86,15 +94,13 @@ function App() {
         </div>
       </header>
 
-
       <main className='main'>
-        <PageNavigation/>
-
+        {/* <PageNavigation/>  */}
         <Routes>
           <Route path='/'element={<MainPage/> }/>
           <Route path='/main' element={<MainPage/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/singup' element={<SignUp/>}/>
+          <Route path='/singUp' element={<SignUp/>}/>
           <Route path='/guideContent' >
             <Route path='list' element={<GuideContentList allData={allData}/>}/>
             <Route path='detail/:bno' element={<GuideContentDetail allData={allData}/>}/>
@@ -102,7 +108,7 @@ function App() {
             <Route path='update/:bno' element={<GuideContentUpdate allData={allData}/>}/>
           </Route>
           <Route path='*' element={
-            <div>
+            <div className='errorPage'>
               <h1>  존재하지 않는 페이지입니다. </h1>
               <Link to='/'> 사이트로 돌아가기 </Link>
             </div>
@@ -112,7 +118,6 @@ function App() {
         <Footer/>
 
       </main>
-
 
      
     

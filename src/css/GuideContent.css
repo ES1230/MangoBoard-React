@@ -66,7 +66,6 @@ button{
 .content-inner .content-title{
     font-weight: 800;
     font-size: 14px;
-    
 }
 /* 작성자, 작성일 */
 .content-inner  .content-author span{
@@ -87,10 +86,11 @@ button{
     flex-direction: row;
     justify-content: center;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 /* 내용inner */
 .content-inner{
-    margin: 25px;
+    margin: 30px;
     width: 330px;
     height: 320px;
 }
@@ -114,6 +114,7 @@ button{
     top: -50px;
 
 }
+
 
 
 /* list.js의 content */

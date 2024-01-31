@@ -56,7 +56,7 @@ li{
 ::-webkit-scrollbar-track-piece { /*background-color: white; 스크롤 바 배경 색상*/ } 
 ::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #DCDCDC; /*스크롤 바 색상*/ }
 
-/* header */
+/* ---------- header ---------- */
 .header {
   font-family: 'Noto Sans KR', sans-serif;
   position: fixed;
@@ -69,6 +69,7 @@ li{
   overflow: visible;
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 1;
 }
 /* header-최상단 */
@@ -84,7 +85,6 @@ li{
   margin: 0 auto;
   padding: 0 80px;
   float: left;
-  /* max-height: 70px; */
 }
 .header-menu ul a{
   color: #111;
@@ -118,23 +118,29 @@ li{
   margin-top: 2px;
 }
 
-/* header-로고있는 두번째 줄 */
+/* header - 로고 있는 두번째 줄 */
 .header-inner{
-  overflow: visible;
+  overflow: hidden;
   max-width: 1760px;
   min-width: 1160px;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 70px;
+  padding: 0 40px;
+}
+.header-inner nav{
+  float: left;
+  margin-left: 20px;
 }
 
-.header img{
-  /* display: flex; */
+/* header 로고 */
+.header-inner img{
   float: left;
   vertical-align: center;
-  width : 180px;
-  margin-left: 30px;
-  padding: 24px 0;
+  width : 175px;
+  margin-left: 10px;
+  padding: 20px 0;
 }
 
 .header nav{
@@ -146,7 +152,6 @@ li{
 }
 
 .header nav ul{
-  /* display: flex; */
   list-style: none;
   position: relative;
   vertical-align: middle;
@@ -159,36 +164,34 @@ li{
   line-height: 69px;
   letter-spacing: -0.05em;
   color: #111;
-  /* line-height: 69px; */
-  color: #111;
   font-weight: 700;
-  margin-left: 40px;
+  margin-left: 24px;
   display: inline-block;
   vertical-align: center;
+  position: relative;
+  vertical-align: middle;
 }
 .header li:hover{
   color: #ffcc01;
   -webkit-transition: all .2s;
-  /* transition: color 0.3s ease;  */
 }
 
 /* 로그인부분 */
 .header-inner .right{
   float: right;
-  width: 400px;
-  margin-left: 50px;
-  /* display: flex; */
+  /* margin-left: 50px; */
+  display: flex; 
   font-size: 14px;
 }
 .header .right ul{
   display: flex;
-  /* width: 400px; */
   width: 100%;
+  width: 400px;
 }
 .header .right ul>*{
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-  margin-left: 23px;
+  display: inline-block; 
+  vertical-align: middle; 
+  margin-left: 25px;
   margin-right: 0;
   cursor: pointer;
   display: block;
@@ -197,20 +200,10 @@ li{
   line-height: 69px;
   letter-spacing: -0.05em;
   color: #666;
-  
 }
 
 
-
-
-/* ---------------- 메인 내용 ----------------*/
-
-/* 상단바 */
-.main-inner{
-  display: flex;
-  height: 1vp;
-}
-
+/* ---------------- footer ----------------*/
 
 /* footer */
 .footer{
@@ -225,7 +218,7 @@ li{
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  padding: 20px;
+  padding-top: 30px;
   text-align: left;
   z-index: 9;
 }

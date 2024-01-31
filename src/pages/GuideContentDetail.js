@@ -32,7 +32,6 @@ export default function GuideContentDetail({allData}){
 
             alert('글이 삭제되었습니다.');
             navigate('/guideContent/list');
-
         }
     }
 
@@ -58,7 +57,7 @@ export default function GuideContentDetail({allData}){
                 <p> {detailList.글내용} </p>
             </div>
 
-            <br/><Link to={'/guideContent/list'}> ← 목록으로 돌아가기 </Link><br/><br/>
+            <h3 class="backList"><Link to={'/guideContent/list'}> ← 목록으로 돌아가기 </Link></h3>
 
         </div>
 

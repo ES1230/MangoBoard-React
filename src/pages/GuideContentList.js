@@ -23,7 +23,6 @@ export default function GuideContentList(props){
     }
 
 
-
     return(
         <>
             {/* 사이드바 */}
