@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import '../css/GCDetail.css'
+import '../../css/GCDetail.css'
 
 export default function GuideContentUpdate({allData}){
 
@@ -39,6 +39,7 @@ export default function GuideContentUpdate({allData}){
         // setboard 깊은복사
         setBoard([...setBoardUpdate]) ;
 
+        alert("게시글이 수정되었습니다.");
         navigate('/guideContent/detail/' + content.글번호);
     }
 

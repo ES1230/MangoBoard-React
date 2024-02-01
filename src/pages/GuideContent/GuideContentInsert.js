@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../css/GCDetail.css'
+import '../../css/GCDetail.css'
 
 export default function GuideContentInsert({allData}){
 

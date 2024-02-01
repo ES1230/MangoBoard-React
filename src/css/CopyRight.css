@@ -1,0 +1,147 @@
+.policy{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 60px 0 150px;
+    font-size: 14px;
+}
+
+.policy *{
+    text-align: left;
+}
+
+.policy a{
+    text-decoration: none;
+}
+
+/* 저작권 규정 */
+.policy .tit{
+    font-size: 32px;
+    line-height: 29px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+.policy .license .sub-tit {
+    margin-bottom: 19px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #4b4c4c;
+    
+}
+.policy h2{
+    margin-left: 30px;
+}
+
+.policy .license .bg-box .line-box{
+    padding-top: 34px;
+    border: 1px solid #f4f4f4;
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    text-align: center;
+}
+
+/* 정책 이미지부분 */
+.license .bg-box .cont01 .img01 {
+    width: 360px;
+}
+
+.license .bg-box .red {
+    color: #f45452;
+}
+.license .bg-box .cont01 .line-box figure {
+    margin-top: 34px;
+}
+.policy .img-area{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.policy .img-area img{
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.license .bg-box {
+    padding: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 36px 40px 40px;
+    background: #fafafa;
+}
+
+/* 테이블- 편집가능범위 */
+.policy table{
+    margin: 30px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    letter-spacing: -0.05em;
+    color: #111;
+    background-color: #fff;
+    padding: 30px;
+}
+.policy table th{
+    padding: 10px;
+    border-bottom: 1px solid #777;
+    text-align: center;
+}
+.policy table td{
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.license .bg-box .cont02 th:first-child, .license .bg-box .cont02 td:first-child {
+    border-right: 1px solid #f4f4f4;
+}
+
+.policy .tit_sub:nth-child(1),
+.policy .tit_sub:nth-child(2) .sub_link {
+    margin-left: 20px;
+}
+
+.policy .sub_link{
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: #555;
+    text-underline-position: under;
+}
+
+.policy .license a {
+    color: #777;
+}
+
+.policy .terms-wrap {
+    padding: 25px;
+    margin-top: 60px;
+    padding-top: 55px;
+    border-top: 1px solid #f4f4f4;
+}
+.policy .license .license01 {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+.policy .license .license01 .desc {
+    line-height: 25px;
+    color: #555;
+}
+.policy .license .license-box {
+    margin-top: 55px;
+    padding-top: 55px;
+    border-top: 1px solid #f4f4f4;
+}
+.policy .terms-wrap .desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    color: #555;
+}

@@ -3,10 +3,10 @@ import './css/App.css';
 import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
 import { Link, Navigate, Route, Routes } from 'react-router-dom';
-import GuideContentList from './pages/GuideContentList';
-import GuideContentDetail from './pages/GuideContentDetail';
-import GuideContentInsert from './pages/GuideContentInsert';
-import GuideContentUpdate from './pages/GuideContentUpdate';
+import GuideContentList from './pages/GuideContent/GuideContentList';
+import GuideContentDetail from './pages/GuideContent/GuideContentDetail';
+import GuideContentInsert from './pages/GuideContent/GuideContentInsert';
+import GuideContentUpdate from './pages/GuideContent/GuideContentUpdate';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import MainPage from './pages/MainPage';
@@ -14,6 +14,7 @@ import { userLogout } from './store';
 import PageNavigation from './components/PageNavigation';
 import Footer from './components/Footer';
 import './css/Login.css'
+import CopyRight from './pages/CopyRight';
 
 export let Context = createContext(); //state저장소
 
@@ -81,7 +82,7 @@ function App() {
                 <ul>
                   <Link to={'/login'}><li>로그인</li></Link>
                   <Link to={'/singUp'}><li>회원가입</li></Link>
-                  <li>저작권 규정</li>
+                  <Link to={'/copyRight'}><li>저작권 규정</li></Link>
                 </ul>
                 ):
                 <ul>
@@ -107,6 +108,7 @@ function App() {
             <Route path='insert' element={<GuideContentInsert allData={allData}/>}/>
             <Route path='update/:bno' element={<GuideContentUpdate allData={allData}/>}/>
           </Route>
+          <Route path='/copyRight' element={<CopyRight/>}/>
           <Route path='*' element={
             <div className='errorPage'>
               <h1>  존재하지 않는 페이지입니다. </h1>

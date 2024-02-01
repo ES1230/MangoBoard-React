@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/GuideContent.css';
+import '../../css/GuideContent.css';
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Toggle from 'react-toggle';
@@ -19,9 +19,7 @@ export default function GuideContentList(props){
 
     function showHide(){
 
-
     }
-
 
     return(
         <>

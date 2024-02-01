@@ -1,4 +1,4 @@
-import '../css/GCDetail.css';
+import '../../css/GCDetail.css';
 import { useNavigate, useParams } from "react-router-dom"
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,6 @@ export default function GuideContentDetail({allData}){
 
     return(
         <div className='guideContentDetail'>  
-
 
             <div className='detail-content-header'>
                 <p id="detail-title">{detailList.글제목}</p>
