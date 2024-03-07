@@ -30,17 +30,9 @@ body{
 body *{
   font-family: 'Noto Sans KR', sans-serif;
 }
-p{
-  white-space: pre-line;
-}
-
-a{
-  text-decoration: none;
-}
-
-li{
-  list-style: none;
-}
+p{  white-space: pre-line;}
+a{  text-decoration: none;}
+li{  list-style: none;}
 
 .main{
   margin-top: 100px;
@@ -165,7 +157,7 @@ li{
   letter-spacing: -0.05em;
   color: #111;
   font-weight: 700;
-  margin-left: 25px;
+  margin-left: 50px;
   display: inline-block;
   vertical-align: center;
   position: relative;

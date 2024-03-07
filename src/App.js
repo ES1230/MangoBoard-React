@@ -70,9 +70,8 @@ function App() {
           <a href="/"><img src="/mangoboard.png"/></a> 
             <nav>
               <ul className="gnb">
-                  <li>템플릿</li>
-                  <li>요금제/결제</li>
                   <Link to={'/guideContent/list'}><li>사용가이드</li></Link>
+                  <li>템플릿</li>
                   <li>캐릭터</li>
                   <li>트렌드 따라잡기</li>
               </ul>
