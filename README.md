@@ -4,7 +4,8 @@
 - 리액트 클론코딩
 - 프론트 CRUD기능 구현
 
-![_-ezgif com-video-to-gif-converter](https://github.com/ES1230/MangoBoard-React/assets/153258776/d3d61c5f-e336-44b7-9121-24620565f070)
+![망고보드리액트](https://github.com/ES1230/MangoBoard-React/assets/153258776/04cd9c94-cb8a-4a4f-9072-8b1207fc831b)
+
 
   
 #
