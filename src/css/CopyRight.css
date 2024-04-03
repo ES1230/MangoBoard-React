@@ -28,7 +28,9 @@
     line-height: 29px;
     letter-spacing: -0.05em;
     color: #4b4c4c;
-    
+}
+.policy li{
+    padding : 15px;
 }
 .policy h2{
     margin-left: 30px;
