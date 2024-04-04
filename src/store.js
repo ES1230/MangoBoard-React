@@ -6,8 +6,8 @@ let user = createSlice({
     initialState : null,
     reducers : {
     
-        userLogin(state,데이터){
-            return 데이터.payload;
+        userLogin(state,data){
+            return data.payload;
         },
         userLogout(){
             return null;

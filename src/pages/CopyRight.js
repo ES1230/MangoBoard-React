@@ -3,7 +3,6 @@ import '../css/CopyRight.css';
 export default function CopyRight(){
 
     return(
-
         <>
         <section class="policy license">
 		        <h3 class="tit">저작권 규정</h3>
@@ -83,28 +82,18 @@ export default function CopyRight(){
 		                            </div>
 		                        </div>
 		                    </li>
-		                    <li>
-		                        4. 무료회원은 슬라이드와 콘텐츠에 삽입된 워터마크와 copyright 문구나 회사로고 표식을 임의로 제거할 수 없습니다. 프로회원이 아닌 회원은 프로폰트에 있는 워터마크를 삭제할 수 없습니다.
-		                    </li>
+		                    <li>4. 무료회원은 슬라이드와 콘텐츠에 삽입된 워터마크와 copyright 문구나 회사로고 표식을 임의로 제거할 수 없습니다. 프로회원이 아닌 회원은 프로폰트에 있는 워터마크를 삭제할 수 없습니다. </li>
 		                    <li>5. 회원이 유료기간에 다운로드한 작업결과물은 유료기간 종료후에도 영구적으로 게시 가능하며 다운로드한 원본을 편집 없이 재 사용할 수 있습니다.</li>
 		                    <li>6. 회원은 망고보드에서 제공되는 디자인요소가 포함된 작업결과물을 배타적 권리를 주장할 수 있는 상표권이나, 저작권등록 등에는 사용할 수 없습니다.</li>
 		                    <li>7. 망고툰 서비스는 망고보드 회원 누구나 무료로 이용할 수 있으며, 저작권 제6조가 기타 망고보드 저작권 규정에 우선하여 적용됩니다.</li>
-		                    
 		                </ol>
 		            </div>
-		            {/* <div class="license02 license-box">
+		            <div class="license02 license-box">
 		                <h2 class="sub-tit">저작권(라이선스) 규정</h2>
-		                <p class="desc">
-		                본 규정은 주식회사 리아모어소프트(이하 ‘회사’라 한다.)가 운영하는 망고보드(www.mangoboard.net) 웹사이트(이하 '망고보드'라 한다)에서 제공되는 각종 콘텐츠에 대한 <i class="br not-indent">저작권을 규정하기 위한 것으로 망고보드를 사용하는 회원(이하 ‘회원’이라 한다)은 아래의 항목에 동의한 것으로 간주합니다.</i></p>
-		                <ul class="terms-license target-move">
-		                    <li><a href="#" data-target="#termsLicense01">1. 망고보드의 사용</a></li>
-		                    <li><a href="#" data-target="#termsLicense02">2. 회원 템플릿</a></li>
-		                    <li><a href="#" data-target="#termsLicense03">3. 회사의 면책</a></li>
-		                    <li><a href="#" data-target="#termsLicense04">4. 제약사항</a></li>
-		                    <li><a href="#" data-target="#termsLicense05">5. 타 저작권의 출처표기</a></li>
-		                    <li><a href="#" data-target="#termsLicense06">6. 망고툰 서비스</a></li>
-		                    <li><a href="#" data-target="#termsLicense07">7. 문의</a></li>
-		                </ul>
+		                <p class="desc li02p">
+		                	본 규정은 주식회사 리아모어소프트(이하 ‘회사’라 한다.)가 운영하는 망고보드(www.mangoboard.net) 웹사이트(이하 '망고보드'라 한다)에서 제공되는 각종 콘텐츠에 대한 
+							<br></br>저작권을 규정하기 위한 것으로 망고보드를 사용하는 회원(이하 ‘회원’이라 한다)은 아래의 항목에 동의한 것으로 간주합니다.
+						</p>
 		                <div class="justice">
 		                    <strong class="justice-tit">용어의 정의</strong>
 		                    <ul>
@@ -119,7 +108,7 @@ export default function CopyRight(){
 		                    </ul>
 		                </div>
 		            </div>
-		            <div class="license03 license-box" id="termsLicense01">
+		             {/* <div class="license03 license-box" id="termsLicense01">
 		                <h2 class="sub-tit small">1. 망고보드의 사용</h2>
 		                <ul class="desc">
 		                	<li>가. 회사가 망고보드를 통해 제공하는 모든 콘텐츠 및 '편집기'에 대한 저작권은 회사에게 있으며 저작권법과 국제저작권조약에 의하여 보호받고 있습니다.<i class="br">단, 망고보드에서 제공되는 일부 사진, 폰트, 아이콘, 음원, 영상 등은 타 저작권사로부터 망고보드 서비스에서 라이선스 규칙을 준수하는 조건으로 허가를 받아 회원에게 사용권을 제공하고 있습니다.</i></li>
@@ -615,21 +604,7 @@ export default function CopyRight(){
 							<li>마. 망고툰에서 제공하는 캐릭터가 주요한 구성품으로 되어 제작한 굿즈(goods)는 무상배포는 가능하나 유상거래에는 사용할 수 없습니다.</li>
 		                </ul>
 		            </div>
-		
-		            <div class="license09 license-box" id="termsLicense07">
-		                <h2 class="sub-tit small">7. 문의</h2>
-		                <div class="desc">
-		                    <p>저작권에 대한 문의는 아래의 이메일이나, 전화로 문의할 수 있습니다.</p>
-		                    <p>Email : <a href="mailto:support@mangoboard.net">support@mangoboard.net</a></p>
-		                    <p>Tel : 02-2655-9749</p>
-		                </div>
-		                <div class="desc">
-		                    <strong>&lt;부칙&gt;</strong>
-		                    <p>본 정책의</p>
-		                    <p>최초시행일자 : 2016년 10월 10일</p>
-		                    <p>변경시행일자 : 2023년 10월 12일</p>
-		                </div>
-		            </div>*/}
+					*/}
 		        </div> 
 		    </section>
         </>

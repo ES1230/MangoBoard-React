@@ -97,6 +97,7 @@
     top: 278px;
     animation: shake 3.3s ease-in-out infinite; 
 }
+
 /* 캐릭터 위아래 이동 애니메이션 */
 @keyframes shake {
     0%, 100% {
@@ -124,7 +125,7 @@
 
 /* 문구부분- 막막한 디자인 */
 #cont-template {
-    padding: 86px 0 85px;
+    padding: 100px 0 100px;
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -150,7 +151,6 @@
 /* 비디오 부분 */
 #cont-video{
     padding: 96px 0 90px;
-    /* height: 899px; */
     background: #000;
 }
 #cont-video .cont-tit{
@@ -200,9 +200,6 @@
     height: 45px;
     position: relative;
     /* background: url(https://www.mangoboard.net/images/btn_main-arrow.png) no-repeat; */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* display: block; */
     padding: 0;
     font-size: 20px;
     opacity: .8;
@@ -220,17 +217,15 @@
 
 /* 슬라이드 이미지 */
 #slide-img{
-    /* height: 200px; */
     height: 600px;
     width: 100%;
     overflow: hidden;
     position: relative;
-    /* display: flex; */
     /* background-image: url('https://www.mangoboard.net/images/img_main-character02.jpg'); */
 }
 #slide-img::before {
     display: block;
-    padding-top: 56.25%; /* 이미지의 가로세로 비율에 따라 조절 (기본은 16:9) */
+    padding-top: 56.25%;
 }
 #slide-img h2{
     z-index: 1;

@@ -29,16 +29,13 @@ function App() {
 
   
   useEffect(function(){
-
     axios.get( "/data/data.json")
     .then(
       function(result){
         setBoard(result.data);
       }
     ).catch((error)=> console.log(error.response))
-
   },[]);
-
 
   // 로그아웃
   const handleLogout = () =>{
@@ -47,7 +44,6 @@ function App() {
       dispatch(userLogout());
     }
   }
-
 
   return (
     <div className="App">
@@ -70,8 +66,9 @@ function App() {
           <a href="/"><img src="/mangoboard.png"/></a> 
             <nav>
               <ul className="gnb">
-                  <Link to={'/guideContent/list'}><li>사용가이드</li></Link>
                   <li>템플릿</li>
+                  <li>요금제/결제</li>
+                  <Link to={'/guideContent/list'}><li>사용가이드</li></Link>
                   <li>캐릭터</li>
                   <li>트렌드 따라잡기</li>
               </ul>

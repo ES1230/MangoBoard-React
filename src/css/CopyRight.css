@@ -5,13 +5,9 @@
     font-size: 14px;
 }
 
-.policy *{
-    text-align: left;
-}
+.policy *{ text-align: left; }
 
-.policy a{
-    text-decoration: none;
-}
+.policy a{ text-decoration: none; }
 
 /* 저작권 규정 */
 .policy .tit{
@@ -29,12 +25,8 @@
     letter-spacing: -0.05em;
     color: #4b4c4c;
 }
-.policy li{
-    padding : 15px;
-}
-.policy h2{
-    margin-left: 30px;
-}
+.policy li{ padding : 15px; }
+.policy h2{ margin-left: 30px; }
 
 .policy .license .bg-box .line-box{
     padding-top: 34px;
@@ -99,7 +91,6 @@
     font-size: 14px;
 }
 
-
 .license .bg-box .cont02 th:first-child, .license .bg-box .cont02 td:first-child {
     border-right: 1px solid #f4f4f4;
 }
@@ -146,4 +137,57 @@
     line-height: 28px;
     letter-spacing: -0.05em;
     color: #555;
+}
+
+/* 저작권(라이선스) 규정 */
+.license02{
+    margin-top: 55px;
+    padding-top: 55px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.license02 .sub-tit{
+    line-height: 29px;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+}
+
+.policy .license .desc{ color : #777;}
+.terms-wrap .desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    color: #555;
+    margin-top : 10px;
+    padding-left : 15px;
+    text-align : left;
+}
+.license02 .li02p { padding-left : 30px;}
+
+/* 용어의 정의 */
+.license .justice .justice-tit {
+    display: inline-block;
+    margin-top : 20px;
+    margin-left : 20px;
+    padding-left: 48px;
+    width: 86px;
+    height: 47px;
+    background: url("https://www.mangoboard.net/images/bg_license-justice.png") no-repeat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.05em;
+    color: #111;
+}
+.license .justice li {
+    position: relative;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.05em;
+    color: #777;
 }
