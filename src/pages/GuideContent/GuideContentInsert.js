@@ -38,7 +38,6 @@ export default function GuideContentInsert({allData}){
     }
 
 
-
     return(
 
         <div className='guideContentUpdate'> 
@@ -53,7 +52,6 @@ export default function GuideContentInsert({allData}){
             onChange={ function(e){ setContent({...content, 이미지:e.target.value});}} 
             value={content.이미지}/> */}
 
-       
             {/* <button onClick={() => contentInsert() }>등록</button> */}
 
             <p id="uTitle"> 게시글 등록 </p>
@@ -81,21 +79,6 @@ export default function GuideContentInsert({allData}){
             <div className="update-content-button">
                 <button onClick={() => contentInsert() }>등록</button>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </div>
 

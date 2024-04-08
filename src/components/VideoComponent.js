@@ -22,7 +22,6 @@ const VideoComponent = () =>{
     }
 
     return(
-
         <div id='cont-video'>
             <h2 className="cont-tit"><strong>동영상 템플릿</strong>으로 프로 수준의 <strong>영상 제작</strong></h2>
             <p className="desc">
@@ -31,7 +30,6 @@ const VideoComponent = () =>{
                 <span>3. 다양한 동영상 템플릿</span>
             </p>
             <div className="video-button-area"> 
-            {/* <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button> */}
                 <button onClick={ handlePrev } > ＜ </button>
                     <video autoPlay muted loop playsInline preload="metadata" width="100%" height="100%" type="video/mp4"
                     data-src={videos[currentVideoIndex].src}  src={videos[currentVideoIndex].src}>
@@ -39,7 +37,6 @@ const VideoComponent = () =>{
                 <button onClick={ handleNext } > ＞ </button>
             </div>
         </div>
-
     )
 
 }

@@ -1,19 +1,12 @@
-.App {
-  text-align: center;
-}
+.App { text-align: center; }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
-}
-
+.notosanskr * { font-family: 'Noto Sans KR', sans-serif;}
 
 /* common */
 body{
@@ -23,13 +16,16 @@ body{
   margin: 0;
   padding: 0;
   color: #4b4c4c;
-  user-select: none;
+  /* user-select: none; */
 }
-
 body *{ font-family: 'Noto Sans KR', sans-serif; }
 p{  white-space: pre-line;}
 a{  text-decoration: none;}
 li{  list-style: none;}
+::selection {
+  background: #ffcc01;
+  color: #ffffff;
+}
 
 .main{
   margin-top: 100px;
@@ -93,7 +89,7 @@ li{  list-style: none;}
 #header-menu-first{
   background-image: url("https://www.mangoboard.net/images/main/top/top_btn.png");
   background-repeat: no-repeat;
-  background-size: cover; /* 이미지를 커버로 조절 (원본 비율 유지) */
+  background-size: cover;
   height: 100%;
 }
 #header-menu-second a{
@@ -168,14 +164,13 @@ li{  list-style: none;}
 /* 로그인부분 */
 .header-inner .right{
   float: right;
-  /* margin-left: 50px; */
   display: flex; 
   font-size: 14px;
 }
 .header .right ul{
   display: flex;
   width: 100%;
-  width: 400px;
+  width: 300px;
 }
 .header .right ul>*{
   display: inline-block; 
@@ -193,13 +188,12 @@ li{  list-style: none;}
 
 
 /* ---------------- footer ----------------*/
-
 /* footer */
 .footer{
-  margin-top: 10px;
   display: flex;
-  justify-content: space-evenly;
-  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  height: 230px;
   width: 100%;
   z-index: 10;
   color: #4b4c4c;
@@ -213,10 +207,27 @@ li{  list-style: none;}
 }
 
 .footer p{
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
 }
+.footer strong{
+  font-size : 14px;
+}
+.footer .footer1{
+  display: flex;
+  justify-content: space-evenly;
+  /* width : 100%; */
+  width : 1400px;
+  padding-top : 20px;
+}
 
+
+.footer .footer2{
+  padding : 20px;
+  width : 1400px;
+  padding-left: 300px;
+  font-size: 12px;
+}
 
 /* 페이지이동 화살표 */
 .page-navigation {
@@ -245,12 +256,10 @@ li{  list-style: none;}
   align-items: center;
   justify-content: center;
   font-weight: 1000;
-  /* letter-spacing: 2px; */
   -webkit-transition: all .2s;
 }
 
 .page-navigation a:hover {
   background-color: #FEE554;
   border: 1px solid #FEE554;
-
 }

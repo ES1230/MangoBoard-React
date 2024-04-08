@@ -10,13 +10,7 @@ export default function GuideContentList(props){
     console.log(board);
 
     const navigate = useNavigate();
-
-    //메뉴 토글, 초기값 false로 설정
-    // const [isOpen, setisOpen] = useState(false); 
-    // const toggleChage = () => {
-    //     setisOpen(!isOpen); 
-    // }
-
+    
     function showHide(){
 
     }
@@ -76,7 +70,10 @@ export default function GuideContentList(props){
 
                 <div className='content-outer'>
                     {
-                        board != null && board.map(function(list, index){
+                        board != null && board
+                        .slice()
+                        .sort((a,b)=>b.글번호 - a.글번호) //글번호 기준 내림차순 정렬
+                        .map(function(list, index){
                             const firstLine = list.글내용.split('.')[0];
                             return(
                                 <div className='content-inner' 

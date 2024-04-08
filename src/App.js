@@ -26,7 +26,6 @@ function App() {
 
   let [board, setBoard] = useState([]);  //초기데이터
   let allData = {board,setBoard} // 전달해줄 데이터
-
   
   useEffect(function(){
     axios.get( "/data/data.json")
