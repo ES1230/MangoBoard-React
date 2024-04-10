@@ -1,0 +1,42 @@
+.App { text-align: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { font-family: 'Noto Sans KR', sans-serif;}
+
+/* common */
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size : 12px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #4b4c4c;
+  /* user-select: none; */
+}
+body *{ font-family: 'Noto Sans KR', sans-serif; }
+p{  white-space: pre-line;}
+a{  text-decoration: none;}
+li{  list-style: none;}
+::selection {
+  background: #ffcc01;
+  color: #ffffff;
+}
+
+.main{
+  margin-top: 100px;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 10px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; /* 세로축 스크롤바 길이 */ height: 6px; /* 가로축 스크롤바 길이 */ } 
+::-webkit-scrollbar-button:start {display:none;/* Top, Left 방향의 이동버튼 */ } 
+::-webkit-scrollbar-button:end { display:none; /* Bottom, Right 방향의 이동버튼 */ } 
+::-webkit-scrollbar-track-piece { /*background-color: white; 스크롤 바 배경 색상*/ } 
+::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #DCDCDC; /*스크롤 바 색상*/ }

@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import './css/App.css';
+import './css/common/App.css';
+import './css/common/Footer.css';
+import './css/common/Header.css';
 import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
 import { Link, Navigate, Route, Routes } from 'react-router-dom';
