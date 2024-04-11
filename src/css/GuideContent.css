@@ -4,10 +4,6 @@
     font-weight: 700;
     font-style: normal;
 }
-/* background: #f5f5f5; */
-/* color: #c7c7c7; */
-
-
 
 button{
     background: #ffd013;
@@ -60,8 +56,6 @@ button{
 }
 
 
-
-
 /* 내용-제목 */
 .content-inner .content-title{
     font-weight: 800;
@@ -112,13 +106,10 @@ button{
     float: right;
     position: relative;
     top: -50px;
-
 }
-
 
 
 /* list.js의 content */
 .contentList{
     margin-left: 280px;
 }
-

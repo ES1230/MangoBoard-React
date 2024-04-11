@@ -1,4 +1,4 @@
-import '../css/Main.css';
+import '../css/main/Main.css';
 import VideoComponent from '../components/VideoComponent';
 
 export default function MainPage(){

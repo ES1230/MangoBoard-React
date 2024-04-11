@@ -63,6 +63,7 @@
     justify-content: space-evenly;
     flex-direction: column;
 }
+
 /* ---------- 캐릭터들 ---------- */
 #kv #mesCha {
     width: 206px;
@@ -190,8 +191,6 @@
 }
 #cont-video .video-button-area{
     display: flex;
-    /* text-align: center; */
-    /* vertical-align: middle; */
     justify-content: center;
     align-items: center;
 }

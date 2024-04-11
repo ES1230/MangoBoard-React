@@ -20,7 +20,6 @@ import CopyRight from './pages/CopyRight';
 
 export let Context = createContext(); //state저장소
 
-
 function App() {
 
   let user = useSelector( ({user}) => {return user});
