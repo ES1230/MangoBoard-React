@@ -29,7 +29,7 @@ export default function Login(){
         if(email || password ){
             dispatch(userLogin(userInfo)) ;
             navigate('/');
-        }else{ //이메일,패스워드 입력되어 있지 않으면 알람표시
+        }else{ //이메일,패스워드 입력되어 있지 않으면 알람 표시
             setShowAlert(true); 
         }
     }
